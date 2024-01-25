@@ -40,3 +40,10 @@ class Futbol(models.Model):
 
     def __str__(self):
         return f"{self.Abr} - {self.Nombre}"
+
+class Nacionalidad(models.Model):
+    Abr = models.CharField(max_length=4)
+    Nombre = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f"{self.Abr} - {self.Nombre}"
